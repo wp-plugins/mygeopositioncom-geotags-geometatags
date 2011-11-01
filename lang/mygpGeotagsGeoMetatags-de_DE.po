@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MyGeoPosition.com Geotags/GeoMetatags\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-10-29 16:45+0100\n"
-"PO-Revision-Date: 2011-11-01 15:58+0100\n"
+"PO-Revision-Date: 2011-11-01 17:02+0100\n"
 "Last-Translator: Daniel Filzhut <info@filzhut.de>\n"
 "Language-Team:  <info@filzhut.de>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: mygeoposition.com-geo-meta-tags.php
-msgid "MyGeoPosition.com Geotags / GeoMetatags"
-msgstr "MyGeoPosition.com Geotags / GeoMetatags"
+msgid "MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags"
+msgstr "MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags"
 
 #: mygeoposition.com-geo-meta-tags.php:34
 msgid "City or other placename. Example: New York"

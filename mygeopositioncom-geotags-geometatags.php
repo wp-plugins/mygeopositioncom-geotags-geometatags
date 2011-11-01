@@ -84,8 +84,8 @@ function mygpGeotagsGeoMetatags_createMetaBox() {
     global $mygpGeotagsGeoMetatags_key;
  
     if (function_exists('add_meta_box')) {
-        add_meta_box('new-meta-boxes', __('MyGeoPosition.com Geotags / GeoMetatags', $mygpGeotagsGeoMetatags_key), 'mygpGeotagsGeoMetatags_displayMetaBox', 'post', 'normal', 'high');
-        add_meta_box('new-meta-boxes', __('MyGeoPosition.com Geotags / GeoMetatags', $mygpGeotagsGeoMetatags_key), 'mygpGeotagsGeoMetatags_displayMetaBox', 'page', 'normal', 'high');
+        add_meta_box('new-meta-boxes', __('MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags', $mygpGeotagsGeoMetatags_key), 'mygpGeotagsGeoMetatags_displayMetaBox', 'post', 'normal', 'high');
+        add_meta_box('new-meta-boxes', __('MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags', $mygpGeotagsGeoMetatags_key), 'mygpGeotagsGeoMetatags_displayMetaBox', 'page', 'normal', 'high');
     }
     
 }

@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: mygeoposition.com-geo-meta-tags.php
-msgid "MyGeoPosition.com Geotags / GeoMetatags"
+msgid "MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags"
 msgstr ""
 
 #: mygeoposition.com-geo-meta-tags.php:34

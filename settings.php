@@ -25,9 +25,9 @@ class mygpGeotagsGeoMetatags_settings_config {
 	//  DISPLAY SETTINGS
 	//  (only used if bespoke page_name)
 	 
-	var $title = "MyGeoPosition.com Geotags/GeoMetatags";  // page title that is displayed
+	var $title = "MyGeoPosition.com Geotags/GeoMetatags/GeoFeedtags";  // page title that is displayed
 	var $intro_text = "Some basic settings for this plugin."; // text below title
-	var $nav_title = "MyGP Geo(Meta)tags"; // how page is listed on left-hand Settings panel
+	var $nav_title = "MyGP Geotags"; // how page is listed on left-hand Settings panel
 	 
 	//  SECTIONS
 	//  Each section should be own array within $sections.
