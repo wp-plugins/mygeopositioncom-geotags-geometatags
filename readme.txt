@@ -5,11 +5,11 @@ Requires at least: 2.9
 Tested up to: 3.2.1
 Stable tag: 1.0
 
-Create geo-posttags and geo-metatags for every post and page (region, placename, position, ICBM). Use a geopicker map with auto-locating function.
+Create geo-posttags and geo-metatags for every post and page. Use an easy-to-use geopicker map with auto-locating function for entering locations.
 
 == Description ==
 
-Create geo-posttags and geo-metatags for every post and page. Use an easy-to-use geopicker map with optional auto-locating function.
+Create geo-posttags and geo-metatags for every post and page. Use an easy-to-use geopicker map with optional auto-locating function for entering locations.
 
 * * Add Geo-Metatags to posts & pages
 * * Add Geo-Posttags to posts
