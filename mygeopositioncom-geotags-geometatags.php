@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: MyGeoPosition.com Geotags/GeoMetatags/GeoFeedtags
+ * Plugin Name: MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags
  * Plugin URI: http://www.mygeoposition.com
  * Description: Create geo-posttags, geo-metatags and geo-feedtags for posts and pages. Use an easy-to-use geopicker map with auto-locating function.
  * Version: 1.1
