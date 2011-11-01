@@ -23,7 +23,7 @@ Check http://api.mygeoposition.com/wordpress/ for more information.
 == Screenshots ==
 
 1. Geodata input on "Edit post" page: This will be added as geo-metatags to your post.
-2. Geopicker window, that helps to find a location and finetune it using a drag & drop marker. When clicking "Return data", all geo fields are filled automatically.
+2. Geopicker window, that helps to search a location and finetune it using a drag & drop marker. Clicking the cross-hair button next to the search input will locate your position using the W3C geolocation API (FF4, IE9+). When clicking "Return data", all geo input fields (above) are filled automatically.
 3. Automatically adds geotags to your post tags.
 4. Available settings.
 
