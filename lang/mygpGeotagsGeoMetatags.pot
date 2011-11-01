@@ -1,0 +1,134 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MyGeoPosition.com Geotags/GeoMetatags\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-29 17:28+0100\n"
+"PO-Revision-Date: 2011-10-29 17:28+0100\n"
+"Last-Translator: Daniel Filzhut <info@filzhut.de>\n"
+"Language-Team:  <info@filzhut.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: F:\\Web\\mygeoposition.com\\WordPress Plugin\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "MyGeoPosition.com Geotags / GeoMetatags"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php:34
+msgid "City or other placename. Example: New York"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php:38
+msgid "Country and state. Example: US-NY"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php:42
+msgid "Latitude and Longitude. Example: 40.7143528, -74.0059731"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php:46
+msgid "Latitude and Longitude. Example: 40.7143528;-74.0059731"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php:48
+msgid "Open Geopicker tool"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "Clear geo data"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "Sorry, the Wordpress version of the geopicker does only run in IE8+, FF4+, Safari or Chrome."
+msgstr ""
+
+
+
+#: settings.php
+msgid "Some basic settings for this plugin."
+msgstr ""
+
+
+
+#: settings.php
+msgid "Geopicker settings"
+msgstr ""
+
+#: settings.php
+msgid "The geopicker popup, which shows the map where you can search for a location."
+msgstr ""
+
+#: settings.php
+msgid "Autolocate"
+msgstr ""
+
+#: settings.php
+msgid "When opening the geopicker map, try to autolocate me if possible (W3C Geolocation API)"
+msgstr ""
+
+
+
+#: settings.php
+msgid "Geotagging settings"
+msgstr ""
+
+#: settings.php
+msgid "Which kind of tags should be displayed?"
+msgstr ""
+
+#: settings.php
+msgid "Add geo-meta-tags"
+msgstr ""
+
+#: settings.php
+msgid "Render geo metatags in html head section of pages/posts"
+msgstr ""
+
+#: settings.php
+msgid "Add geo-post-tags"
+msgstr ""
+
+#: settings.php
+msgid "Automatically add geo post tags when updating the metatags in backend"
+msgstr ""
+
+#: settings.php
+msgid "Add city to post-tags"
+msgstr ""
+
+#: settings.php
+msgid "Automatically add the name of the city to the post tags when updating metatags in backend"
+msgstr ""
+
+#: settings.php
+msgid "disabled"
+msgstr ""
+
+#: settings.php
+msgid "enabled"
+msgstr ""
+
+
+
+#: settings.php
+msgid "Save Changes"
+msgstr ""
+
+
+
+#: settings.php
+msgid "Add a free GeoPicker to your website or application"
+msgstr ""
+
+#: settings.php
+msgid "MyGeoPosition.com - Free address geocoding / geo-metatags / geotags / kml files"
+msgstr ""
+
+#: settings.php
+msgid "Comments, questions, bug reports? Please contact us"
+msgstr ""
