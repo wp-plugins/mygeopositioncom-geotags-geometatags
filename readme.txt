@@ -3,20 +3,25 @@ Contributors: daniel.filzhut
 Tags: Post, posts, plugin, admin, page, geo, geocoding, geo coding, geotagging, geo tagging, geo location, geolocation, tagging, geotag, geo tag, geotags, geo tags, geometatags, geo metatags
 Requires at least: 2.9
 Tested up to: 3.2.1
-Stable tag: 1.0
+Stable tag: 1.1
 
-Create geo-posttags and geo-metatags for every post and page. Use an easy-to-use geopicker map with auto-locating function for entering locations.
+Create geo-posttags and geo-metatags for posts and pages. Use an easy-to-use geopicker map with auto-locating function for entering locations.
 
 == Description ==
 
-Create geo-posttags and geo-metatags for every post and page. Use an easy-to-use geopicker map with optional auto-locating function for entering locations.
+Create geo-posttags, geo-metatags and geo-feedtags for posts and pages. Use an easy-to-use geopicker map with optional auto-locating function for entering locations.
 
 * Add Geo-Metatags to posts & pages
 * Add Geo-Posttags to posts
+* Add Geo-Feedtags to newsfeeds
 * Use geopicker to find a location and finetune result on map (MyGeoPosition.com / Google Maps API)
 * Let the browser detect your position automatically (W3C geolocation API, FF4+, IE9+)
-* Supported geo meta tags: geo.region, geo.placename, geo.position, geo.ICBM
-* Supported geo post tags: geotagged, geo:lat=xxx, geo:lon=xxx
+
+Supported tags:
+
+* geo meta tags: geo.region, geo.placename, geo.position, geo.ICBM
+* geo post tags: geotagged, geo:lat=xxx, geo:lon=xxx
+* geo feed tags: geo, geoRSS/KML, geoURL and ICBM
 
 Check http://api.mygeoposition.com/wordpress/ for more information.
 
@@ -26,8 +31,15 @@ Check http://api.mygeoposition.com/wordpress/ for more information.
 2. Geopicker window, that helps to search a location and finetune it using a drag & drop marker. Clicking the cross-hair button next to the search input will locate your position using the W3C geolocation API (FF4, IE9+). When clicking "Return data", all geo input fields (above) are filled automatically.
 3. Automatically adds geotags to your post tags.
 4. Available settings.
+5. Example: Geo-Metatags in HTML source code
+6. Example: Geo-Posttags
+7. Example: Geo-Feedtags in RSS source code
 
 == Changelog ==
+
+= 1.1 =
+* 2011-11-01
+* Added Geo-Feedtags
 
 = 1.0 =
 * 2011-11-01
@@ -41,7 +53,7 @@ Check http://api.mygeoposition.com/wordpress/ for more information.
 
 == Upgrade Notice ==
 
-none yet
+Latest version also supports geo-feed-tags for newsfeeds.
 
 == Copyright info ==
 

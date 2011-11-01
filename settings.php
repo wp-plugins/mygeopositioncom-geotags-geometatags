@@ -72,6 +72,11 @@ class mygpGeotagsGeoMetatags_settings_config {
 	              'label' => "Add city to post-tags",
 	              'description' => "Automatically add the name of the city to the post tags when updating metatags in backend",
 	              'dropdown' => "dd_switch",
+	              'default_value' => "true"),
+	            'addFeedtags' => array (
+	              'label' => "Add geo-feed-tags",
+	              'description' => "Add the configured location of a post to the RSS/Atom/RDF news feed (in Geo, GeoRSS/KML, GeoURL and ICBM format)",
+	              'dropdown' => "dd_switch",
 	              'default_value' => "true")
 	              )
 	          )

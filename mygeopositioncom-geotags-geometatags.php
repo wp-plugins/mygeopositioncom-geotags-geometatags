@@ -2,8 +2,8 @@
 /**
  * Plugin Name: MyGeoPosition.com Geotags/GeoMetatags
  * Plugin URI: http://www.mygeoposition.com
- * Description: Create geo-posttags and geo-metatags for every post and page (region, placename, position, ICBM). Use an easy-to-use geopicker map with auto-locating function.
- * Version: 1.0
+ * Description: Create geo-posttags, geo-metatags and geo-feedtags for posts and pages. Use an easy-to-use geopicker map with auto-locating function.
+ * Version: 1.1
  * Author: Daniel Filzhut
  * Author URI: http://www.filzhut.de
  */
@@ -337,8 +337,68 @@ function mygpGeotagsGeoMetatags_addGeoMetatags() {
 } 
 add_action('wp_head', 'mygpGeotagsGeoMetatags_addGeoMetatags');
 
-
     
+/**
+ * Add geo namespaces to news feeds.
+ *
+ */
+function mygpGeotagsGeoMetatags_addGeoNamespaces(){
+	
+	if (mygpGeotagsGeoMetatags_getOption("addFeedtags")) {
+	
+		echo "xmlns:geo=\"http://www.w3.org/2003/01/geo/wgs84_pos#\"\n";
+		echo "\txmlns:georss=\"http://www.georss.org/georss\" xmlns:gml=\"http://www.opengis.net/gml\"\n";
+		echo "\txmlns:geourl=\"http://geourl.org/rss/module/\"\n";
+		echo "\txmlns:icbm=\"http://postneo.com/icbm\"\n";
+	
+	}
+	
+}
+add_action('rss2_ns', 'mygpGeotagsGeoMetatags_addGeoNamespaces');
+add_action('atom_ns', 'mygpGeotagsGeoMetatags_addGeoNamespaces');
+add_action('rdf_ns', 'mygpGeotagsGeoMetatags_addGeoNamespaces');
+
+
+
+/**
+ * Add geo tags to news feeds
+ *
+ */
+function mygpGeotagsGeoMetatags_addGeoFeedtags(){
+	
+    global $wp_query, $mygpGeotagsGeoMetatags_key;
+	
+	if (mygpGeotagsGeoMetatags_getOption("addFeedtags")) {
+
+		$data = get_post_meta($wp_query->post->ID, $mygpGeotagsGeoMetatags_key, true);
+		
+		$dataSplitted = "";            
+		if ($data[ 'position' ] != "") {
+			$dataSplitted = explode(";", $data[ 'position' ]);
+		}
+		if ($data[ 'ICBM' ] != "") {
+			$dataSplitted = explode(",", $data[ 'ICBM' ]);
+		}
+			
+		$lat = trim($dataSplitted[0]);
+		$lon = trim($dataSplitted[1]);
+	
+		if ($lat != "" && $lon != "") {
+			echo "\t<geo:lat>$lat</geo:lat>\n\t\t<geo:long>$lon</geo:long>\n";
+			echo "\t\t<georss:where>\n\t\t\t<gml:Point>\n\t\t\t\t<gml:pos>$lat $lon</gml:pos>\n\t\t\t</gml:Point>\n\t\t</georss:where>\n";
+			echo "\t\t<geourl:latitude>$lat</geourl:latitude>\n\t\t<geourl:longitude>$lon</geourl:longitude>\n";
+			echo "\t\t<icbm:latitude>$lat</icbm:latitude>\n\t\t<icbm:longitude>$lon</icbm:longitude>\n";
+		}
+	
+	}
+	
+}
+add_action('rss2_item', 'mygpGeotagsGeoMetatags_addGeoFeedtags');
+add_action('atom_entry', 'mygpGeotagsGeoMetatags_addGeoFeedtags');
+add_action('rdf_item', 'mygpGeotagsGeoMetatags_addGeoFeedtags');
+
+
+
 /**
  * Return plugin options.
  *
@@ -364,6 +424,9 @@ function mygpGeotagsGeoMetatags_getOption($option) {
     		  return true;
     		  break;
     		case 'addCityToPosttags';
+    		  return true;
+    		  break;
+    		case 'addFeedtags';
     		  return true;
     		  break;
     	}

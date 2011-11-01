@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MyGeoPosition.com Geotags/GeoMetatags\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-10-29 16:45+0100\n"
-"PO-Revision-Date: 2011-11-01 01:18+0100\n"
+"PO-Revision-Date: 2011-11-01 15:58+0100\n"
 "Last-Translator: Daniel Filzhut <info@filzhut.de>\n"
 "Language-Team:  <info@filzhut.de>\n"
 "MIME-Version: 1.0\n"
@@ -98,6 +98,14 @@ msgstr "Stadt in Artikel-Schlagwörtern"
 #: settings.php
 msgid "Automatically add the name of the city to the post tags when updating metatags in backend"
 msgstr "Automatisch auch den Namen der Stadt den Artikel-Schlagwörtern hinzufügen."
+
+#: settings.php
+msgid "Add geo-feed-tags"
+msgstr "Geo-Feed-Tags"
+
+#: settings.php
+msgid "Add the configured location of a post to the RSS/Atom/RDF news feed (in Geo, GeoRSS/KML, GeoURL and ICBM format)"
+msgstr "Die konfigurierten Geodaten im RSS/Atom/RDF Newsfeed mit ausgeben (im Geo, GeoRSS/KML, GeoURL und ICBM Format)"
 
 #: settings.php
 msgid "disabled"
