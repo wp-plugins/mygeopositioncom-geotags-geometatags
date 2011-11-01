@@ -18,6 +18,8 @@ Create geo-posttags and geo-metatags for every post and page. Use an easy-to-use
 * Supported geo meta tags: geo.region, geo.placename, geo.position, geo.ICBM
 * Supported geo post tags: geotagged, geo:lat=xxx, geo:lon=xxx
 
+Check http://api.mygeoposition.com/wordpress/ for more information.
+
 == Screenshots ==
 
 1. Geodata input on "Edit post" page: This will be added as geo-metatags to your post.
