@@ -11,11 +11,11 @@ Create geo-posttags and geo-metatags for every post and page. Use an easy-to-use
 
 Create geo-posttags and geo-metatags for every post and page. Use an easy-to-use geopicker map with optional auto-locating function for entering locations.
 
-* * Add Geo-Metatags to posts & pages
-* * Add Geo-Posttags to posts
-* * Use geopicker to find a location and finetune result on map (MyGeoPosition.com / Google Maps API)
-* * Let the browser detect your position automatically (W3C geolocation API, FF4+, IE9+)
-* * Supported tags: region, placename, position, ICBM
+* Add Geo-Metatags to posts & pages
+* Add Geo-Posttags to posts
+* Use geopicker to find a location and finetune result on map (MyGeoPosition.com / Google Maps API)
+* Let the browser detect your position automatically (W3C geolocation API, FF4+, IE9+)
+* Supported tags: region, placename, position, ICBM
 
 == Screenshots ==
 
