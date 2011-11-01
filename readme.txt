@@ -1,6 +1,6 @@
-=== MyGeoPosition.com Geotags/GeoMetatags ===
+=== MyGeoPosition.com Geotags/GeoMetatags/GeoFeedtags ===
 Contributors: daniel.filzhut
-Tags: Post, posts, plugin, admin, page, geo, geocoding, geo coding, geotagging, geo tagging, geo location, geolocation, tagging, geotag, geo tag, geotags, geo tags, geometatags, geo metatags
+Tags: Post, posts, plugin, admin, page, geo, geocoding, geo coding, geotagging, geo tagging, geo location, geolocation, tagging, geotag, geo tag, geotags, geo tags, geometatags, geo metatags, geo meta tags, geoposttags, geo posttags, geo post tags, geofeedtags, geo feedtags, geo feed tags
 Requires at least: 2.9
 Tested up to: 3.2.1
 Stable tag: 1.1
