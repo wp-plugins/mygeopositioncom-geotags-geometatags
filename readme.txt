@@ -27,13 +27,13 @@ Check http://api.mygeoposition.com/wordpress/ for more information.
 
 == Screenshots ==
 
-1. Geodata input on "Edit post" page: This will be added as geo-metatags to your post.
-2. Geopicker window, that helps to search a location and finetune it using a drag & drop marker. Clicking the cross-hair button next to the search input will locate your position using the W3C geolocation API (FF4, IE9+). When clicking "Return data", all geo input fields (above) are filled automatically.
-3. Automatically adds geotags to your post tags.
-4. Available settings.
-5. Example: Geo-Metatags in HTML source code
-6. Example: Geo-Posttags
-7. Example: Geo-Feedtags in RSS source code
+1. Geodata input on "Edit post" page: Will be used for Post-/Meta-/Feedtags. Enter it manually or use the geopicker tool.
+2. Geopicker tool, that helps to search a location and finetune it using a drag & drop marker. Clicking the cross-hair button next to the search input will locate your position using the W3C geolocation API (FF4, IE9+). When clicking "Return data", all geo input fields (above) are filled automatically.
+3. The plugin will automatically add geotags to your post tags.
+4. Example: Generated Geo-Metatags in HTML source code
+5. Example: Generated Geo-Posttags
+6. Example: Generated Geo-Feedtags in RSS source code
+7. Available settings.
 
 == Changelog ==
 
