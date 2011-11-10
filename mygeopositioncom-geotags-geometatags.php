@@ -2,7 +2,7 @@
 /**
  * Plugin Name: MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags / Maps
  * Plugin URI: http://www.mygeoposition.com
- * Description: Create geo-posttags, geo-metatags, geo-feedtags and maps for posts and pages. Use an easy-to-use geopicker map with auto-locating function.
+ * Description: Create geo-posttags, geo-metatags, geo-feedtags and maps for posts and pages. Display the geotagged location in form of a map before, after or within the post. An easy-to-use geopicker map with auto-locating functionality helps entering locations.
  * Version: 1.2
  * Author: Daniel Filzhut
  * Author URI: http://www.filzhut.de

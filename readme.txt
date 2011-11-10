@@ -5,11 +5,11 @@ Requires at least: 2.9
 Tested up to: 3.2.1
 Stable tag: 1.2
 
-Create geo-posttags and geo-metatags for posts and pages. Use an easy-to-use geopicker map with auto-locating functionality for entering locations.
+Create geo-posttags, geo-metatags & maps for posts and pages. An easy-to-use geopicker map with auto-locating functionality helps entering locations.
 
 == Description ==
 
-Create geo-posttags, geo-metatags, geo-feedtags and maps for posts and pages. Use an easy-to-use geopicker map with search, drag & drop and optional auto-locating functionality for entering locations. Display the geotagged location in form of a map before, after or within the post.
+Create geo-posttags, geo-metatags, geo-feedtags and maps for posts and pages. Display the geotagged location in form of a map before, after or within the post. An easy-to-use geopicker map with search, drag & drop and optional auto-locating functionality helps entering locations.
 
 * Add Geo-Metatags to posts & pages
 * Add Geo-Posttags to posts
