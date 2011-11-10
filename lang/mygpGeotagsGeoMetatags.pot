@@ -35,6 +35,81 @@ msgstr ""
 msgid "Latitude and Longitude. Example: 40.7143528;-74.0059731"
 msgstr ""
 
+#: mygeoposition.com-geo-meta-tags.php
+msgid "Show map"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "default"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "yes"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "no"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "Map location"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "before post"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "after post"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "replace [mygp_map] in post"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "Zoom level"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "1 - World"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "3 - Continent"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "5 - Country"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "7 - State"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "11 - City"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "14 - District"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "16 - Street"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "18 - Street corner"
+msgstr ""
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "21 - House"
+msgstr ""
+
+
+
+
 #: mygeoposition.com-geo-meta-tags.php:48
 msgid "Open Geopicker tool"
 msgstr ""
@@ -119,6 +194,60 @@ msgstr ""
 
 #: settings.php
 msgid "enabled"
+msgstr ""
+
+
+
+#: settings.php
+msgid "Map settings"
+msgstr ""
+
+#: settings.php
+msgid "Based on the latitude/longitude entered into the geo.position field, a map is displayed before/after/within the post."
+msgstr ""
+
+#: settings.php
+msgid "Map type"
+msgstr ""
+
+#: settings.php
+msgid "Map width"
+msgstr ""
+
+#: settings.php
+msgid "Map height"
+msgstr ""
+
+#: settings.php
+msgid "Map float"
+msgstr ""
+
+#: settings.php
+msgid "roadmap"
+msgstr ""
+
+#: settings.php
+msgid "satellite"
+msgstr ""
+
+#: settings.php
+msgid "hybrid"
+msgstr ""
+
+#: settings.php
+msgid "terrain"
+msgstr ""
+
+#: settings.php
+msgid "none"
+msgstr ""
+
+#: settings.php
+msgid "left"
+msgstr ""
+
+#: settings.php
+msgid "right"
 msgstr ""
 
 

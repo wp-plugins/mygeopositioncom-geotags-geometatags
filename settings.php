@@ -50,7 +50,7 @@ class mygpGeotagsGeoMetatags_settings_config {
 	            'autolocate' => array (
 	              'label' => "Autolocate",
 	              'description' => "When opening the geopicker map, try to autolocate me if possible (W3C Geolocation API)",
-	              'dropdown' => "dd_switch",
+	              'dropdown' => "dd_onoff",
 	              'default_value' => "true"),
 	              )
 	          ),
@@ -61,25 +61,64 @@ class mygpGeotagsGeoMetatags_settings_config {
 	            'addMetatags' => array (
 	              'label' => "Add geo-meta-tags",
 	              'description' => "Render geo metatags in html head section of pages/posts",
-	              'dropdown' => "dd_switch",
+	              'dropdown' => "dd_onoff",
 	              'default_value' => "true"),
 	            'addPosttags' => array (
 	              'label' => "Add geo-post-tags",
 	              'description' => "Automatically add geo post tags when updating the metatags in backend",
-	              'dropdown' => "dd_switch",
+	              'dropdown' => "dd_onoff",
 	              'default_value' => "true"),
 	            'addCityToPosttags' => array (
 	              'label' => "Add city to post-tags",
 	              'description' => "Automatically add the name of the city to the post tags when updating metatags in backend",
-	              'dropdown' => "dd_switch",
+	              'dropdown' => "dd_onoff",
 	              'default_value' => "true"),
 	            'addFeedtags' => array (
 	              'label' => "Add geo-feed-tags",
 	              'description' => "Add the configured location of a post to the RSS/Atom/RDF news feed (in Geo, GeoRSS/KML, GeoURL and ICBM format)",
-	              'dropdown' => "dd_switch",
+	              'dropdown' => "dd_onoff",
 	              'default_value' => "true")
 	              )
-	          )
+	          ),
+	      'map' => array(
+	          'title' => 'Map settings',
+	          'description' => "Based on the latitude/longitude entered into the geo.position field, a map is displayed before/after/within the post.",
+	          'fields' => array(
+	            'addMap' => array (
+	              'label' => "Show map",
+	              'description' => "", 
+	              'dropdown' => "dd_onoff",
+	              'default_value' => "true"),
+	            'mapLocation' => array (
+	              'label' => "Map location",
+	              'description' => "", 
+	              'dropdown' => "dd_location",
+	              'default_value' => "after"), 
+	            'zoomLevel' => array (
+	              'label' => "Zoom level",
+	              'description' => "", 
+	              'dropdown' => "dd_zoomlevel",
+	              'default_value' => "12"),  
+	            'mapType' => array (
+	              'label' => "Map type",
+	              'description' => "", 
+	              'dropdown' => "dd_maptype",
+	              'default_value' => "ROADMAP"), 
+	            'mapWidth' => array (
+	              'label' => "Map width",
+	              'description' => "", 
+	              'default_value' => "100%"),  
+	            'mapHeight' => array (
+	              'label' => "Map height",
+	              'description' => "", 
+	              'default_value' => "200px"),  
+	            'mapFloat' => array (
+	              'label' => "Map float",
+	              'description' => "", 
+	              'dropdown' => "dd_float",
+	              'default_value' => "none"), 
+	              ),
+	          ),
 	    );
 	 
 	 // DROPDOWN OPTIONS
@@ -89,10 +128,49 @@ class mygpGeotagsGeoMetatags_settings_config {
 	 // You can have multiple instances of the same dropdown options
 	 
 	var $dropdown_options = array (
-	    'dd_switch' => array (
+	    'dd_onoff' => array (
 	        'false' => "disabled",
 	        'true' => "enabled",
-	        )
+	        ),
+	    'dd_location' => array (
+	        'before' => "Before post",
+	        'after' => "After post",
+	        'shortcode' => "Replace [mygp_map] in post",
+	        ),
+	    'dd_zoomlevel' => array (
+	        '1' => "1 - World",
+	        '2' => "2",
+	        '3' => "3 - Continent",
+	        '4' => "4",
+	        '5' => "5 - Country",
+	        '6' => "6",
+	        '7' => "7 - State",
+	        '8' => "8",
+	        '9' => "9",
+	        '10' => "10",
+	        '11' => "11 - City",
+	        '12' => "12",
+	        '13' => "13",
+	        '14' => "14 - District",
+	        '15' => "15",
+	        '16' => "16 - Street",
+	        '17' => "17",
+	        '18' => "18 - Street corner",
+	        '19' => "19",
+	        '20' => "20",
+	        '21' => "21 - House",
+	        ),
+	    'dd_maptype' => array (
+	        'ROADMAP' => "roadmap",
+	        'SATELLITE' => "satellite",
+	        'HYBRID' => "hybrid",
+	        'TERRAIN' => "terrain",
+	        ),
+	    'dd_float' => array (
+	        'none' => "none",
+	        'left' => "left",
+	        'right' => "right",
+	        ),
 	    );
  
 //  end class

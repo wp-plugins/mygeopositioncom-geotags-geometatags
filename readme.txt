@@ -1,19 +1,20 @@
-=== MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags ===
+=== MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags / Maps ===
 Contributors: daniel.filzhut
 Tags: Post, posts, plugin, admin, page, geo, geocoding, geo coding, geotagging, geo tagging, geo location, geolocation, tagging, geotag, geo tag, geotags, geo tags, geometatags, geo metatags, geo meta tags, geoposttags, geo posttags, geo post tags, geofeedtags, geo feedtags, geo feed tags
 Requires at least: 2.9
 Tested up to: 3.2.1
-Stable tag: 1.1
+Stable tag: 1.2
 
 Create geo-posttags and geo-metatags for posts and pages. Use an easy-to-use geopicker map with auto-locating functionality for entering locations.
 
 == Description ==
 
-Create geo-posttags, geo-metatags and geo-feedtags for posts and pages. Use an easy-to-use geopicker map with search, drag & drop and optional auto-locating functionality for entering locations.
+Create geo-posttags, geo-metatags, geo-feedtags and maps for posts and pages. Use an easy-to-use geopicker map with search, drag & drop and optional auto-locating functionality for entering locations. Display the geotagged location in form of a map before, after or within the post.
 
 * Add Geo-Metatags to posts & pages
 * Add Geo-Posttags to posts
 * Add Geo-Feedtags to newsfeeds
+* Add map with geotagged location to posts & pages
 * Use geopicker map to search for a location and finetune result with drag & drop (MyGeoPosition.com / Google Maps API)
 * Let the browser detect your position automatically (W3C geolocation API, FF4+, IE9+)
 
@@ -33,9 +34,14 @@ Check http://api.mygeoposition.com/wordpress/ for more information.
 4. Example: Generated Geo-Metatags in HTML source code
 5. Example: Generated Geo-Posttags
 6. Example: Generated Geo-Feedtags in RSS source code
-7. Available settings.
+7. Example: Map of geotagged location after the post
+8. Available settings.
 
 == Changelog ==
+
+= 1.2 =
+* 2011-11-10
+* Added maps of geotagged locations
 
 = 1.1 =
 * 2011-11-01
@@ -53,7 +59,8 @@ Check http://api.mygeoposition.com/wordpress/ for more information.
 
 == Upgrade Notice ==
 
-Latest version also supports geo-feed-tags for newsfeeds.
+NEW: Displays a map of the geotagged location before/after/within the post
+NEW: Renders geo-feed-tags for newsfeeds
 
 == Copyright info ==
 

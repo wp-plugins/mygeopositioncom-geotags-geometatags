@@ -1,6 +1,24 @@
+/*
+ * Administration area
+ */
+ 
 div.form-wrap-mygp-geotags-geometatags div.form-field {
   float: left;
+}
+div.form-wrap-mygp-geotags-geometatags div.form-field-mygp-input {
   width: 45%;
+}
+div.form-wrap-mygp-geotags-geometatags div.form-field-mygp-select {
+  width: 15%;
+}
+div.form-wrap-mygp-geotags-geometatags div.form-field-mygp-addMap {
+  width: auto;
+}
+div.form-wrap-mygp-geotags-geometatags div.form-field-mygp-mapLocation {
+  width: auto;
+}
+div.form-wrap-mygp-geotags-geometatags div.form-field-mygp-zoomLevel {
+  width: auto;
 }
 div.form-wrap-mygp-geotags-geometatags div.form-field-mygp-geotags-geometatags-geopicker {
   width: 100%;
@@ -20,4 +38,12 @@ button#mygpGeoPickerButton:hover {
 p#addGeoPicker {
   margin-top: 24px !important;
   color: #999;
+}
+
+/*
+ * Frontend
+ */
+ 
+div.mygpMap {
+  margin-bottom: 12px;
 }

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MyGeoPosition.com Geotags/GeoMetatags\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-10-29 16:45+0100\n"
-"PO-Revision-Date: 2011-11-01 17:02+0100\n"
+"PO-Revision-Date: 2011-11-10 22:12+0100\n"
 "Last-Translator: Daniel Filzhut <info@filzhut.de>\n"
 "Language-Team:  <info@filzhut.de>\n"
 "MIME-Version: 1.0\n"
@@ -34,6 +34,78 @@ msgstr "Längengrad und Breitengrad. Beispiel: 40.7143528, -74.0059731"
 #: mygeoposition.com-geo-meta-tags.php:46
 msgid "Latitude and Longitude. Example: 40.7143528;-74.0059731"
 msgstr "Längengrad und Breitengrad. Beispiel: 40.7143528;-74.0059731"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "Show map"
+msgstr "Karte anzeigen"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "default"
+msgstr "Standard"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "yes"
+msgstr "Ja"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "no"
+msgstr "Nein"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "Map location"
+msgstr "Kartenposition"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "before post"
+msgstr "Vor dem Artikel"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "after post"
+msgstr "Nach dem Artikel"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "replace [mygp_map] in post"
+msgstr "Ersetze [mygp_map] im Artikel"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "Zoom level"
+msgstr "Zoom Level"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "1 - World"
+msgstr "1 - Welt"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "3 - Continent"
+msgstr "3 - Kontinent"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "5 - Country"
+msgstr "5 - Land"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "7 - State"
+msgstr "7 - Bundesland"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "11 - City"
+msgstr "11 - Stadt"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "14 - District"
+msgstr "14 - Stadtteil"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "16 - Street"
+msgstr "16 - Strasse"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "18 - Street corner"
+msgstr "18 - Strassenecke"
+
+#: mygeoposition.com-geo-meta-tags.php
+msgid "21 - House"
+msgstr "21 - Haus"
 
 #: mygeoposition.com-geo-meta-tags.php:48
 msgid "Open Geopicker tool"
@@ -114,6 +186,58 @@ msgstr "deaktiviert"
 #: settings.php
 msgid "enabled"
 msgstr "aktiviert"
+
+#: settings.php
+msgid "Map settings"
+msgstr "Karteneinstellungen"
+
+#: settings.php
+msgid "Based on the latitude/longitude entered into the geo.position field, a map is displayed before/after/within the post."
+msgstr "Basierend auf dem Längengrad/Breitengrad aus dem geo.position Feld wird eine Karte vor/nach/innerhalb des Artikels angezeigt."
+
+#: settings.php
+msgid "Map type"
+msgstr "Kartentyp"
+
+#: settings.php
+msgid "Map width"
+msgstr "Breite der Karte"
+
+#: settings.php
+msgid "Map height"
+msgstr "Höhe der Karte"
+
+#: settings.php
+msgid "Map float"
+msgstr "Ausrichtung"
+
+#: settings.php
+msgid "roadmap"
+msgstr "Strassenkarte"
+
+#: settings.php
+msgid "satellite"
+msgstr "Satellitenbild"
+
+#: settings.php
+msgid "hybrid"
+msgstr "Hybrid"
+
+#: settings.php
+msgid "terrain"
+msgstr "Oberfläche"
+
+#: settings.php
+msgid "none"
+msgstr "keine"
+
+#: settings.php
+msgid "left"
+msgstr "links"
+
+#: settings.php
+msgid "right"
+msgstr "rechts"
 
 #: settings.php
 msgid "Save Changes"
