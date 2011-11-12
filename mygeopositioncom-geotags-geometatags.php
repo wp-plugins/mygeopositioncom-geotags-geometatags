@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags / Maps
+ * Plugin Name: MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags / GeoMicroformats / Maps
  * Plugin URI: http://www.mygeoposition.com
- * Description: Create geo-posttags, geo-metatags, geo-feedtags and maps for posts and pages. Display the geotagged location in form of a map before, after or within the post. An easy-to-use geopicker map with auto-locating functionality helps entering locations.
- * Version: 1.2
+ * Description: Create geo-posttags, geo-metatags, geo-feedtags, geo-microformats and maps for posts and pages. Display the geotagged location in form of a map before, after or within the post. An easy-to-use geopicker map with auto-locating functionality helps entering locations.
+ * Version: 1.3
  * Author: Daniel Filzhut
  * Author URI: http://www.filzhut.de
  */
@@ -131,8 +131,8 @@ function mygpGeotagsGeoMetatags_createMetaBox() {
     global $mygpGeotagsGeoMetatags_key;
  
     if (function_exists('add_meta_box')) {
-        add_meta_box('new-meta-boxes', __('MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags', $mygpGeotagsGeoMetatags_key), 'mygpGeotagsGeoMetatags_displayMetaBox', 'post', 'normal', 'high');
-        add_meta_box('new-meta-boxes', __('MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags', $mygpGeotagsGeoMetatags_key), 'mygpGeotagsGeoMetatags_displayMetaBox', 'page', 'normal', 'high');
+        add_meta_box('new-meta-boxes', __('MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags / GeoMicroformats', $mygpGeotagsGeoMetatags_key), 'mygpGeotagsGeoMetatags_displayMetaBox', 'post', 'normal', 'high');
+        add_meta_box('new-meta-boxes', __('MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags / GeoMicroformats', $mygpGeotagsGeoMetatags_key), 'mygpGeotagsGeoMetatags_displayMetaBox', 'page', 'normal', 'high');
     }
     
 }
@@ -449,6 +449,7 @@ function mygpGeotagsGeoMetatags_addGeoFeedtags(){
 		if ($lat != "" && $lon != "") {
 			echo "\t<geo:lat>$lat</geo:lat>\n\t\t<geo:long>$lon</geo:long>\n";
 			echo "\t\t<georss:where>\n\t\t\t<gml:Point>\n\t\t\t\t<gml:pos>$lat $lon</gml:pos>\n\t\t\t</gml:Point>\n\t\t</georss:where>\n";
+			echo "\t\t<georss:point>$lat $lon</georss:point>\n";
 			echo "\t\t<geourl:latitude>$lat</geourl:latitude>\n\t\t<geourl:longitude>$lon</geourl:longitude>\n";
 			echo "\t\t<icbm:latitude>$lat</icbm:latitude>\n\t\t<icbm:longitude>$lon</icbm:longitude>\n";
 		}
@@ -546,6 +547,50 @@ add_filter('the_content', 'mygpGeotagsGeoMetatags_addMap');
 
 
 /**
+ * Add microformats to post
+ *
+ */
+function mygpGeotagsGeoMetatags_addMicroformats($content) {
+
+	global $wp_query, $mygpGeotagsGeoMetatags_key;
+	
+	$postId = $wp_query->post->ID;
+	$data = get_post_meta($postId, $mygpGeotagsGeoMetatags_key, true);
+	
+	$dataSplitted = "";            
+	if ($data[ 'position' ] != "") {
+		$dataSplitted = explode(";", $data[ 'position' ]);
+	} else {
+		return $content;		
+	}
+	
+	if (mygpGeotagsGeoMetatags_getOption("addMicroformats") == 'false') {
+		return $content;
+	}
+
+	// http://microformats.org/wiki/geo
+	// http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=146861
+	// TODO: http://schema.org/GeoCoordinates 
+	// TODO: http://www.data-vocabulary.org/Geo/ 
+	$content = $content . '
+<div id="geo-post-' . $postId . '" class="geo geo-post" style="display:none">
+   <span class="latitude" title="' . $dataSplitted[0] . '">
+      ' . $dataSplitted[0] . '
+      <span class="value-title" title="' . ($dataSplitted[0]) . '"></span>
+   </span>
+   <span class="longitude" title="' . $dataSplitted[1] . '">
+      ' . $dataSplitted[1] . '
+      <span class="value-title" title="' . ($dataSplitted[1]) . '"></span>
+   </span>
+</div>';
+		
+    return $content;
+}
+add_filter('the_content', 'mygpGeotagsGeoMetatags_addMicroformats');
+
+
+
+/**
  * Return plugin options.
  *
  */
@@ -595,6 +640,9 @@ function mygpGeotagsGeoMetatags_getOption($option, $postId = '') {
     		  return 'true';
     		  break;
     		case 'addFeedtags';
+    		  return 'true';
+    		  break;
+    		case 'addMicroformats';
     		  return 'true';
     		  break;
     		case 'addMap';

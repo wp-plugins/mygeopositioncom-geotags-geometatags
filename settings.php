@@ -77,6 +77,11 @@ class mygpGeotagsGeoMetatags_settings_config {
 	              'label' => "Add geo-feed-tags",
 	              'description' => "Add the configured location of a post to the RSS/Atom/RDF news feed (in Geo, GeoRSS/KML, GeoURL and ICBM format)",
 	              'dropdown' => "dd_onoff",
+	              'default_value' => "true"),
+	            'addMicroformats' => array (
+	              'label' => "Add geo-microformats",
+	              'description' => "Add the configured location of a post to the HTML source code (in http://microformats.org/wiki/geo format)", 
+	              'dropdown' => "dd_onoff",
 	              'default_value' => "true")
 	              )
 	          ),
