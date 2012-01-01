@@ -1,11 +1,11 @@
-=== MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags / GeoMicroformats / Maps ===
+=== MyGeoPosition.com Geotagging: Geotags / GeoMetatags / GeoFeedtags / GeoMicroformats / Maps ===
 Contributors: daniel.filzhut
 Tags: Post, posts, plugin, admin, page, geo, geocoding, geo coding, geotagging, geo tagging, geo location, geolocation, tagging, geotag, geo tag, geotags, geo tags, geometatags, geo metatags, geo meta tags, geoposttags, geo posttags, geo post tags, geofeedtags, geo feedtags, geo feed tags, geomicroformats, geo microformats, geo micro formats
 Requires at least: 2.9
-Tested up to: 3.2.1
-Stable tag: 1.3
+Tested up to: 3.3
+Stable tag: 1.3.1
 
-Create geo-posttags, geo-metatags & maps for posts and pages. An easy-to-use geopicker map with auto-locating functionality helps entering locations.
+Create geo-posttags, geo-metatags & maps for posts + pages. An easy-to-use geopicker map with auto-locating functionality helps entering locations.
 
 == Description ==
 
@@ -41,6 +41,10 @@ Check http://api.mygeoposition.com/wordpress/ for more information.
 9. Available settings.
 
 == Changelog ==
+
+= 1.3.1 =
+* 2012-01-01
+* WordPress 1.3 compatibility
 
 = 1.3 =
 * 2011-11-12
