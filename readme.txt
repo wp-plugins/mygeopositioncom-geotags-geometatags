@@ -2,8 +2,8 @@
 Contributors: daniel.filzhut
 Tags: Post, posts, plugin, admin, page, geo, geocoding, geo coding, geotagging, geo tagging, geo location, geolocation, tagging, geotag, geo tag, geotags, geo tags, geometatags, geo metatags, geo meta tags, geoposttags, geo posttags, geo post tags, geofeedtags, geo feedtags, geo feed tags, geomicroformats, geo microformats, geo micro formats
 Requires at least: 2.9
-Tested up to: 3.3
-Stable tag: 1.3.1
+Tested up to: 3.4
+Stable tag: 1.3.2
 
 Create geo-posttags, geo-metatags & maps for posts + pages. An easy-to-use geopicker map with auto-locating functionality helps entering locations.
 
@@ -41,6 +41,10 @@ Check http://api.mygeoposition.com/wordpress/ for more information.
 9. Available settings.
 
 == Changelog ==
+
+= 1.3.2 =
+* 2012-06-16
+* Fixed file naming problem that caused an error in WordPress MU
 
 = 1.3.1 =
 * 2012-01-01

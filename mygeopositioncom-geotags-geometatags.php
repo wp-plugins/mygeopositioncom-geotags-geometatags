@@ -3,7 +3,7 @@
  * Plugin Name: MyGeoPosition.com Geotagging: Geotags / GeoMetatags / GeoFeedtags / GeoMicroformats / Maps
  * Plugin URI: http://www.mygeoposition.com
  * Description: Create geo-posttags, geo-metatags, geo-feedtags, geo-microformats and maps for posts and pages. Display the geotagged location in form of a map before, after or within the post. An easy-to-use geopicker map with auto-locating functionality helps entering locations.
- * Version: 1.3.1
+ * Version: 1.3.2
  * Author: Daniel Filzhut
  * Author URI: http://www.filzhut.de
  */
@@ -103,7 +103,7 @@ function mygpGeotagsGeoMetatags_loadTexts() {
         )
   );
   
-  include('settings.php');
+  include('mygeopositioncom-geotags-geometatags.settings.php');
   
 }
 add_action( 'init', 'mygpGeotagsGeoMetatags_loadTexts' );
