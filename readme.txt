@@ -80,7 +80,7 @@ NEW: Renders geo-feed-tags for newsfeeds
 
 == Copyright info ==
 
-World Icons are copyright by Oxygen Icons
+"World Icons" are copyright by Oxygen Icons
 
 * http://www.iconfinder.com/icondetails/9506/48/earth_internet_world_icon
 * http://www.iconfinder.com/icondetails/8833/128/browser_earth_internet_network_planet_world_icon
