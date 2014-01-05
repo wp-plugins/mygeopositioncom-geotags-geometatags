@@ -32,7 +32,7 @@ Languages:
 
 * English
 * German
-* Spanish (thanks to Maria Ramos, WebHostingHub / http://webhostinghub.com)
+* Spanish ( thanks to Maria Ramos, WebHostingHub / http://webhostinghub.com )
 
 == Screenshots ==
 
