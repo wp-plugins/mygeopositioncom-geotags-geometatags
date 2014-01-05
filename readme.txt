@@ -28,6 +28,11 @@ Supported geotagging:
 
 Check http://api.mygeoposition.com/wordpress/ for more information.
 
+Languages:
+* English
+* German
+* Spanish (thanks to Maria Ramos, WebHostingHub / http://webhostinghub.com)
+
 == Screenshots ==
 
 1. Geodata input on "Edit post" page: Will be used for Post-/Meta-/Feedtags. Enter it manually or use the geopicker tool.
@@ -41,6 +46,10 @@ Check http://api.mygeoposition.com/wordpress/ for more information.
 9. Available settings.
 
 == Changelog ==
+
+= 1.3.4 =
+* 2014-01-05
+* Documentation updates
 
 = 1.3.3 =
 * 2013-11-24
