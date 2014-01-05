@@ -9,7 +9,7 @@ Create geo-posttags, geo-metatags & maps for posts + pages. An easy-to-use geopi
 
 == Description ==
 
-Create geo-posttags, geo-metatags, geo-feedtags, geo-microformats and maps for posts and pages. Display the geotagged location in form of a map before, after or within the post. An easy-to-use geopicker map with search, drag & drop and optional auto-locating functionality helps entering locations.
+Create geo-posttags, geo-metatags, geo-feedtags, geo-microformats and maps for posts and pages. Display the geotagged location in form of a map before, after or within the post. An easy-to-use geopicker map with search, drag & drop and optional auto-locating functionality helps entering locations. Based on the http://mygeoposition.com GeoPicker API.
 
 * Add Geo-Metatags to posts & pages
 * Add Geo-Posttags to posts
@@ -29,6 +29,7 @@ Supported geotagging:
 Check http://api.mygeoposition.com/wordpress/ for more information.
 
 Languages:
+
 * English
 * German
 * Spanish (thanks to Maria Ramos, WebHostingHub / http://webhostinghub.com)
