@@ -3,7 +3,7 @@
  * Plugin Name: MyGeoPosition.com Geotagging: Geotags / GeoMetatags / GeoFeedtags / GeoMicroformats / Maps
  * Plugin URI: http://www.mygeoposition.com
  * Description: Create geo-posttags, geo-metatags, geo-feedtags, geo-microformats and maps for posts and pages. Display the geotagged location in form of a map before, after or within the post. An easy-to-use geopicker map with auto-locating functionality helps entering locations.
- * Version: 1.3.2
+ * Version: 1.3.5
  * Author: Daniel Filzhut
  * Author URI: http://www.filzhut.de
  */
@@ -483,7 +483,7 @@ function mygpGeotagsGeoMetatags_getMap() {
 	
 	$mapId = 'mygpMap' . $postId;
 	$html = '<div id="' . $mapId . '" style="float:' . mygpGeotagsGeoMetatags_getOption("mapFloat", $postId) . ';width:' . mygpGeotagsGeoMetatags_getOption("mapWidth", $postId) . ';height:' . mygpGeotagsGeoMetatags_getOption("mapHeight", $postId) . ';" class="mygpMap"></div>';
-	$html .= '<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.1&sensor=false"></script>
+	$html .= '<script type="text/javascript" src="//maps.google.com/maps/api/js?v=3.1&sensor=false"></script>
 <script type="text/javascript">
     var latlng = new google.maps.LatLng(' . $dataSplitted[0] . ', ' . $dataSplitted[1] . ');
     var myOptions = {

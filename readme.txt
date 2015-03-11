@@ -3,7 +3,7 @@ Contributors: daniel.filzhut
 Tags: Post, posts, plugin, admin, page, geo, geocoding, geo coding, geotagging, geo tagging, geo location, geolocation, tagging, geotag, geo tag, geotags, geo tags, geometatags, geo metatags, geo meta tags, geoposttags, geo posttags, geo post tags, geofeedtags, geo feedtags, geo feed tags, geomicroformats, geo microformats, geo micro formats
 Requires at least: 2.9
 Tested up to: 3.4
-Stable tag: 1.3.3
+Stable tag: 1.3.5
 
 Create geo-posttags, geo-metatags & maps for posts + pages. An easy-to-use geopicker map with auto-locating functionality helps entering locations.
 
@@ -47,6 +47,10 @@ Languages:
 9. Available settings.
 
 == Changelog ==
+
+= 1.3.5 =
+* 2015-03-11
+* Removed "http:" from Google Maps API URL to avoid mixed content warning
 
 = 1.3.4 =
 * 2014-01-05
