@@ -25,7 +25,7 @@ class mygpGeotagsGeoMetatags_settings_config {
 	//  DISPLAY SETTINGS
 	//  (only used if bespoke page_name)
 	 
-	var $title = "MyGeoPosition.com Geotags/GeoMetatags/GeoFeedtags";  // page title that is displayed
+	var $title = "MyGeoPosition.com Geotags/-Metatags/-Feedtags/-Microdata";  // page title that is displayed
 	var $intro_text = "Some basic settings for this plugin."; // text below title
 	var $nav_title = "MyGP Geotags"; // how page is listed on left-hand Settings panel
 	 
@@ -81,6 +81,11 @@ class mygpGeotagsGeoMetatags_settings_config {
 	            'addMicroformats' => array (
 	              'label' => "Add geo-microformats",
 	              'description' => "Add the configured location of a post to the HTML source code (in http://microformats.org/wiki/geo format)", 
+	              'dropdown' => "dd_onoff",
+	              'default_value' => "true"),
+	            'addMicrodata' => array (
+	              'label' => "Add geo-microdata (HTML5)",
+	              'description' => "Add the configured location of a post to the HTML source code (in http://schema.org/GeoCoordinates format)", 
 	              'dropdown' => "dd_onoff",
 	              'default_value' => "true")
 	              )

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MyGeoPosition.com Geotags/GeoMetatags\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-10-29 16:45+0100\n"
-"PO-Revision-Date: 2013-10-30 10:03+0100\n"
+"PO-Revision-Date: 2015-05-25 14:32+0100\n"
 "Last-Translator: jelena kovacevic <jecajeca260@gmail.com>\n"
 "Language-Team:  <info@filzhut.de>\n"
 "MIME-Version: 1.0\n"
@@ -13,14 +13,14 @@ msgstr ""
 "X-Poedit-Basepath: F:\\Web\\mygeoposition.com\\WordPress Plugin\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "Language: de\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: mygeoposition.com-geo-meta-tags.php
-msgid "MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags / GeoMicroformats"
+msgid "MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags / GeoMicrodata"
 msgstr ""
 "MyGeoPosition.com GeoMetaEtiquetas/GeoMetaEtiquetas/GeoEtiquetasDeFeed/"
-"GeoMicroFormatos"
+"GeoMicroData"
 
 #: mygeoposition.com-geo-meta-tags.php:34
 msgid "City or other placename. Example: New York"
@@ -215,6 +215,18 @@ msgid ""
 msgstr ""
 "Añadir la posición configurada de un post al  código HTML (en el formato "
 "http://microformats.org/wiki/geo)"
+
+#: settings.php
+msgid "Add geo-microdata (HTML5)"
+msgstr "Añadir geo-microdata (HTML5)"
+
+#: settings.php
+msgid ""
+"Add the configured location of a post to the HTML source code (in http://"
+"schema.org/GeoCoordinates format)"
+msgstr ""
+"Añadir la posición configurada de un post al  código HTML (en el formato "
+"http://schema.org/GeoCoordinates)"
 
 #: settings.php
 msgid "disabled"

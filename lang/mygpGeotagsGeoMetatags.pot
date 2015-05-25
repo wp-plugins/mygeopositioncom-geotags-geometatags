@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: mygeoposition.com-geo-meta-tags.php
-msgid "MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags / GeoMicroformats"
+msgid "MyGeoPosition.com Geotags / GeoMetatags / GeoFeedtags / GeoMicrodata"
 msgstr ""
 
 #: mygeoposition.com-geo-meta-tags.php:34
@@ -194,6 +194,14 @@ msgstr ""
 
 #: settings.php
 msgid "Add the configured location of a post to the HTML source code (in http://microformats.org/wiki/geo format)"
+msgstr ""
+
+#: settings.php
+msgid "Add geo-microdata (HTML5)"
+msgstr ""
+
+#: settings.php
+msgid "Add the configured location of a post to the HTML source code (in http://schema.org/GeoCoordinates format)"
 msgstr ""
 
 #: settings.php
